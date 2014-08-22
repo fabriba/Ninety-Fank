@@ -9,7 +9,7 @@
   #define KEY_TEMPERATURE 0
   #define KEY_CONDITIONS 1
   #define KEY_ICON 2
-// Ninety_Fank Version 2.1.1
+// Ninety_Fank Version 2.101
   
 		static Window *window;
 		static GBitmap *background_image;
