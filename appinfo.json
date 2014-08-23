@@ -1,9 +1,9 @@
 {
     "appKeys": {
-        "KEY_TEMPERATURE": 0,
-		"KEY_CONDITIONS": 1,
+        "KEY_CONDITIONS": 1,
         "KEY_ICON": 2,
-        "KEY_LOCATION": 3,	
+        "KEY_TEMPERATURE": 0,
+		"KEY_LOCATION": 3,
     },
     "capabilities": [
         "location"
