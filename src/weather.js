@@ -65,8 +65,9 @@ function locationError(err) {
 		//#define LATITUDE    45.52
 		//#define LONGITUDE 9.17
 		// timestamp 0 means this is not recent location, but just default data, it will be used as a flag in locationSuccess
-	var fallback_pos = { coords.latitude:"45.52", coords.longitude:"9.17", timestamp:0 };
-	locationSuccess(fallback_pos);
+	 /* uncomment what follows to get standard weather location if no gps available */
+	//var fallback_pos = { coords.latitude:"45.52", coords.longitude:"9.17", timestamp:0 };
+	//locationSuccess(fallback_pos);
 }
 
 function getWeather() {
