@@ -443,7 +443,7 @@ static void handle_second_tick(struct tm* current_time, TimeUnits units_changed)
 				snprintf(icon_buffer, sizeof(icon_buffer), "%s", t->value->cstring);
 			  break;
 			case KEY_LOCATION:
-				snprintf(location_buffer, sizeof(location_buffer), "%s", (int)t->value->cstring);
+				snprintf(location_buffer, sizeof(location_buffer), "%s", t->value->cstring);
 			  break;
 			default:
 			  APP_LOG(APP_LOG_LEVEL_ERROR, "Key %d not recognized!", (int)t->key);
