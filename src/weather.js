@@ -23,18 +23,24 @@ function locationSuccess(pos) {
       console.log("Temperature is " + temperature);
 
       // Conditions: json.weather[0].description is more detailed than json.weather[0].main
-      var conditions = json.weather[0].description;      
+      var conditions = json.weather[0].description;   
       console.log("Conditions are " + conditions);
       
-        // Conditions: json.weather[0].description is more detailed than json.weather[0].main
+      // Conditions: json.weather[0].icon contains a string identifying an icon
       var icon = json.weather[0].icon;      
       console.log("icon is " + icon);
+	  
+	  // Conditions: json.weather[0].icon contains a string identifying an icon
+      var location = json.weather[0].name;      
+      console.log("Location is " + location);
+	  	if (pos.timestamp = 0) { location = "gps off"; }
       
       // Assemble dictionary using our keys
       var dictionary = {
         "KEY_TEMPERATURE": temperature,
         "KEY_CONDITIONS": conditions,
-        "KEY_ICON": icon
+        "KEY_ICON": icon,
+		"KEY_LOCATION": location
       };
       
       
@@ -53,15 +59,20 @@ function locationSuccess(pos) {
 }
 
 function locationError(err) {
-  console.log("Error requesting location!");
-  
+    console.log("Error requesting location!");
+	// now we still try to retrieve the weather update for our standard location (Milano) 
+		//NOTE: these should be the same as in config.h
+		//#define LATITUDE    45.52
+		//#define LONGITUDE 9.17
+	var fallback_pos = { coords.latitude:"45.52", coords.longitude:"9.17", timestamp:0 };
+	locationSuccess(fallback_pos);
 }
 
 function getWeather() {
   navigator.geolocation.getCurrentPosition(
     locationSuccess,
     locationError,
-    {timeout: 15000, maximumAge: 60000}
+    {timeout: 15000, maximumAge: 300000}
   );
 }
 

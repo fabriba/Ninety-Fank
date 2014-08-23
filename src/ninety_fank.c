@@ -421,6 +421,7 @@ static void handle_second_tick(struct tm* current_time, TimeUnits units_changed)
 		  static char temperature_buffer[8];
 		  static char conditions_buffer[32];
 		  static char icon_buffer[4];
+		  static char location_buffer[32];
 		  static char weather_layer_buffer[32];
 		  
 		  // Read first item
@@ -438,6 +439,9 @@ static void handle_second_tick(struct tm* current_time, TimeUnits units_changed)
 			  break;
 			case KEY_ICON:
 				snprintf(icon_buffer, sizeof(icon_buffer), "%s", t->value->cstring);
+			  break;
+			case KEY_LOCATION:
+				snprintf(location_buffer, sizeof(location_buffer), "%d", (int)t->value->cstring);
 			  break;
 			default:
 			  APP_LOG(APP_LOG_LEVEL_ERROR, "Key %d not recognized!", (int)t->key);
