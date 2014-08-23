@@ -22,6 +22,7 @@
 			//static TextLayer *cwLayer;    >>> I don't care about displaying the week number on my whatchface
 		static TextLayer *text_addTimeZone1_layer; 
 		static TextLayer *text_addTimeZone2_layer; 
+		static TextLayer *text_addTimeZone3_layer; 
 		static TextLayer *text_sunrise_layer; 
 		static TextLayer *text_sunset_layer; 
 		static TextLayer *battery_layer;
@@ -504,6 +505,13 @@ static void init(void) {
   text_layer_set_font(text_addTimeZone2_layer, fonts_get_system_font(FONT_KEY_GOTHIC_14));
   layer_add_child(window_layer, text_layer_get_layer(text_addTimeZone2_layer));  
   
+  // ==== Create and define Time Zone 3 Layer ====
+  text_addTimeZone3_layer = text_layer_create(GRect(51, 36, 100 /* width */, 30 /* height */)); 
+  text_layer_set_text_color(text_addTimeZone3_layer, GColorWhite);
+  text_layer_set_background_color(text_addTimeZone3_layer, GColorClear );
+  text_layer_set_font(text_addTimeZone3_layer, fonts_get_system_font(FONT_KEY_GOTHIC_14));
+  layer_add_child(window_layer, text_layer_get_layer(text_addTimeZone3_layer));  
+  
   // ==== Create and define Sunrise Layer ====
   text_sunrise_layer = text_layer_create(GRect(7, 152, 50 /* width */, 30 /* height */)); 
   text_layer_set_text_color(text_sunrise_layer, GColorWhite);
@@ -647,6 +655,7 @@ static void deinit(void) {
   // text_layer_destroy(cwLayer);
   text_layer_destroy(text_addTimeZone1_layer);
   text_layer_destroy(text_addTimeZone2_layer);  
+  text_layer_destroy(text_addTimeZone3_layer);  
   text_layer_destroy(text_sunrise_layer);
   text_layer_destroy(text_sunset_layer);  
   text_layer_destroy(connection_layer);
