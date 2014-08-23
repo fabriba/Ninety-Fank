@@ -30,6 +30,7 @@
 			//static TextLayer *second_layer1;
 			//static TextLayer *second_layer2;
 		static TextLayer *s_weather_layer;
+		static TextLayer *weather_location_layer;
 		static BitmapLayer *time_format_layer;
 		static GBitmap *time_format_image;
 			// TODO: Handle 12/24 mode preference when it's exposed.
@@ -456,6 +457,9 @@ static void handle_second_tick(struct tm* current_time, TimeUnits units_changed)
 				// simplified showing only temp and icon, the original string commented out below also shows conditions detail
 				// snprintf(weather_layer_buffer, sizeof(weather_layer_buffer), "  %s\n%s", temperature_buffer, conditions_buffer);  
 		text_layer_set_text(s_weather_layer, weather_layer_buffer);
+		
+		// display location
+		text_layer_set_text(weather_location_layer, location_buffer);
 		  
 		 // Set weather icon and display
 		int current_weather = weather_id(icon_buffer);
@@ -572,6 +576,16 @@ static void init(void) {
   text_layer_set_text_alignment(s_weather_layer, GTextAlignmentLeft);
   text_layer_set_text(s_weather_layer, " ");
   layer_add_child(window_layer, text_layer_get_layer(s_weather_layer));
+  
+  // ==== Create and define weather location text Layer ====
+  weather_location_layer = text_layer_create(GRect(2, 134, /* width */142, 40/* height */));
+  text_layer_set_text_color(weather_location_layer, GColorWhite);
+  text_layer_set_background_color(weather_location_layer, GColorClear);
+  text_layer_set_font(weather_location_layer, fonts_get_system_font(FONT_KEY_GOTHIC_14));
+  text_layer_set_text_alignment(weather_location_layer, GTextAlignmentCenter);
+  text_layer_set_text(weather_location_layer, " ");
+  layer_add_child(window_layer, text_layer_get_layer(weather_location_layer));
+
  
   
   // ==== Create and define AM-PM Layer ====
@@ -682,6 +696,7 @@ static void deinit(void) {
   //text_layer_destroy(second_layer1);  
   //text_layer_destroy(second_layer2); 
   text_layer_destroy(s_weather_layer);
+  text_layer_destroy(weather_location_layer);
   
  
   for (int i = 0; i < TOTAL_DATE_DIGITS; i++) {

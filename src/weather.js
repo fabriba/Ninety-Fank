@@ -33,7 +33,7 @@ function locationSuccess(pos) {
 	  // Conditions: json.weather[0].icon contains a string identifying an icon
       var location = json.weather[0].name;      
       console.log("Location is " + location);
-	  	if (pos.timestamp = 0) { location = "gps off"; }
+	  	if (pos.timestamp = 0) { location = "gps off"; }  //if timestamp=0, this is our default location, and not real data
       
       // Assemble dictionary using our keys
       var dictionary = {
@@ -64,6 +64,7 @@ function locationError(err) {
 		//NOTE: these should be the same as in config.h
 		//#define LATITUDE    45.52
 		//#define LONGITUDE 9.17
+		// timestamp 0 means this is not recent location, but just default data, it will be used as a flag in locationSuccess
 	var fallback_pos = { coords.latitude:"45.52", coords.longitude:"9.17", timestamp:0 };
 	locationSuccess(fallback_pos);
 }
