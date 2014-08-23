@@ -397,23 +397,23 @@ static void handle_second_tick(struct tm* current_time, TimeUnits units_changed)
 		}
 // handles weather (2 of 4) - request not acknowledged
 		static void outbox_failed_callback(DictionaryIterator *iterator, AppMessageResult reason, void *context) {
-		static char weather_layer_buffer[32];
 		  APP_LOG(APP_LOG_LEVEL_ERROR, "Outbox send failed!");
-		// Set weather icon and text
+		/* Set weather icon and text
+		  static char weather_layer_buffer[32];
 		  snprintf(weather_layer_buffer, sizeof(weather_layer_buffer), "nack");
 		  text_layer_set_text(s_weather_layer, weather_layer_buffer);
 		  set_container_image(&weather_images[0], weather_layers[0], WEATHER_IMAGE_RESOURCE_IDS[11], GPoint(2, 2)); 
-		  
+		 */
 		}
 // handles weather (3 of 4) - message reception was unsuccessful
 		static void inbox_dropped_callback(AppMessageResult reason, void *context) {  
-		static char weather_layer_buffer[32];
 		  APP_LOG(APP_LOG_LEVEL_ERROR, "Message dropped!");
-		  // Set weather icon and text
+		  /* Set weather icon and text
+		  static char weather_layer_buffer[32];
 		  snprintf(weather_layer_buffer, sizeof(weather_layer_buffer), "recpt fail");
 		  text_layer_set_text(s_weather_layer, weather_layer_buffer);
 		  set_container_image(&weather_images[0], weather_layers[0], WEATHER_IMAGE_RESOURCE_IDS[11], GPoint(2, 2)); 
-		
+		  */
 		}
 // handles weather (4 of 4) - message received successfully >> elaboration of the message
 		static void inbox_received_callback(DictionaryIterator *iterator, void *context) {
@@ -565,7 +565,7 @@ static void init(void) {
   text_layer_set_background_color(s_weather_layer, GColorClear);
   text_layer_set_font(s_weather_layer, fonts_get_system_font(FONT_KEY_GOTHIC_14));
   text_layer_set_text_alignment(s_weather_layer, GTextAlignmentLeft);
-  text_layer_set_text(s_weather_layer, "  -");
+  text_layer_set_text(s_weather_layer, " ");
   layer_add_child(window_layer, text_layer_get_layer(s_weather_layer));
  
   

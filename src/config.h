@@ -1,7 +1,7 @@
 //NOTE: longitude is positive for East and negative for West
 //      Milan, Coordinates :  45.4667° N, 9.1833° E 
-#define LATITUDE    45.52
-#define LONGITUDE 9.17
+#define LATITUDE    45.4667
+#define LONGITUDE 9.1833
 #define TIMEZONE +1
 #define DAY_NAME_LANGUAGE DAY_NAME_ENGLISH 				// Valid values: DAY_NAME_ENGLISH, DAY_NAME_GERMAN, DAY_NAME_FRENCH
 #define MOONPHASE_NAME_LANGUAGE MOONPHASE_TEXT_ENGLISH 	// Valid values: MOONPHASE_TEXT_ENGLISH, MOONPHASE_TEXT_GERMAN, MOONPHASE_TEXT_FRENCH
@@ -11,11 +11,11 @@
 // ----- Additional time zones to display on the top right 
 //      -NOTE: if timezone is < -24 then that timezone won't be shown
 #define AdditionalTimezone_1 +6 						// Timezone offest
-#define AdditionalTimezone_2 +8 						// Timezone offest
-#define AdditionalTimezone_3 -6 						// Timezone offest
+#define AdditionalTimezone_2 -999 						// Timezone offest (NY = -6)
+#define AdditionalTimezone_3 -999 						// Timezone offest (Syd = -8)
 static char AdditionalTimezone_1_Description[] = "Sg"; // Timezone name to display
-static char AdditionalTimezone_2_Description[] = "Syd"; // Timezone name to display
-static char AdditionalTimezone_3_Description[] = "NY"; // Timezone name to display
+static char AdditionalTimezone_2_Description[] = "SY"; // Timezone name to display
+static char AdditionalTimezone_3_Description[] = "Syd"; // Timezone name to display
 // ----- Additional time zones to display on the top right
 
 
