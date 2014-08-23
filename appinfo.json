@@ -13,193 +13,68 @@
     "resources": {
         "media": [
             {
-                "file": "images/moon_7.png",
-                "name": "IMAGE_MOON_7",
+                "file": "images/moon_6.png",
+                "name": "IMAGE_MOON_6",
                 "type": "png"
             },
             {
-                "file": "images/moon_5.png",
-                "name": "IMAGE_MOON_5",
+                "file": "images/weather_fog.png",
+                "name": "IMAGE_WEATHER_FOG",
                 "type": "png"
             },
             {
-                "file": "images/moon_4.png",
-                "name": "IMAGE_MOON_4",
+                "file": "images/weather_snow.png",
+                "name": "IMAGE_WEATHER_SNOW",
                 "type": "png"
             },
             {
-                "file": "images/moon_3.png",
-                "name": "IMAGE_MOON_3",
+                "file": "images/weather_tstorm.png",
+                "name": "IMAGE_WEATHER_TSTORM",
                 "type": "png"
             },
             {
-                "file": "images/moon_2.png",
-                "name": "IMAGE_MOON_2",
+                "file": "images/weather_rain.png",
+                "name": "IMAGE_WEATHER_RAIN",
                 "type": "png"
             },
             {
-                "file": "images/moon_1.png",
-                "name": "IMAGE_MOON_1",
+                "file": "images/weather_drizzle.png",
+                "name": "IMAGE_WEATHER_DRIZZLE",
                 "type": "png"
             },
             {
-                "file": "images/moon_0.png",
-                "name": "IMAGE_MOON_0",
+                "file": "images/weather_slightly-cloudy.png",
+                "name": "IMAGE_WEATHER_SLIGHTLY_CLOUDY",
                 "type": "png"
             },
             {
-                "file": "images/num_9.png",
-                "name": "IMAGE_NUM_9",
+                "file": "images/weather_partly-cloudy-night.png",
+                "name": "IMAGE_WEATHER_PARTLY_CLOUDY_NIGHT",
                 "type": "png"
             },
             {
-                "file": "images/num_8.png",
-                "name": "IMAGE_NUM_8",
+                "file": "images/weather_partly-cloudy-day.png",
+                "name": "IMAGE_WEATHER_PARTLY_CLOUDY_DAY",
                 "type": "png"
             },
             {
-                "file": "images/num_7.png",
-                "name": "IMAGE_NUM_7",
+                "file": "images/weather_error.png",
+                "name": "IMAGE_WEATHER_NO_WEATHER",
                 "type": "png"
             },
             {
-                "file": "images/num_6.png",
-                "name": "IMAGE_NUM_6",
+                "file": "images/weather_cloudy.png",
+                "name": "IMAGE_WEATHER_CLOUDY",
                 "type": "png"
             },
             {
-                "file": "images/num_5.png",
-                "name": "IMAGE_NUM_5",
+                "file": "images/weather_clear-night.png",
+                "name": "IMAGE_WEATHER_CLEAR_NIGHT",
                 "type": "png"
             },
             {
-                "file": "images/num_4.png",
-                "name": "IMAGE_NUM_4",
-                "type": "png"
-            },
-            {
-                "file": "images/num_3.png",
-                "name": "IMAGE_NUM_3",
-                "type": "png"
-            },
-            {
-                "file": "images/num_2.png",
-                "name": "IMAGE_NUM_2",
-                "type": "png"
-            },
-            {
-                "file": "images/num_1.png",
-                "name": "IMAGE_NUM_1",
-                "type": "png"
-            },
-            {
-                "file": "images/num_0.png",
-                "name": "IMAGE_NUM_0",
-                "type": "png"
-            },
-            {
-                "file": "images/datenum_9.png",
-                "name": "IMAGE_DATENUM_9",
-                "type": "png"
-            },
-            {
-                "file": "images/datenum_8.png",
-                "name": "IMAGE_DATENUM_8",
-                "type": "png"
-            },
-            {
-                "file": "images/datenum_7.png",
-                "name": "IMAGE_DATENUM_7",
-                "type": "png"
-            },
-            {
-                "file": "images/datenum_6.png",
-                "name": "IMAGE_DATENUM_6",
-                "type": "png"
-            },
-            {
-                "file": "images/datenum_5.png",
-                "name": "IMAGE_DATENUM_5",
-                "type": "png"
-            },
-            {
-                "file": "images/datenum_4.png",
-                "name": "IMAGE_DATENUM_4",
-                "type": "png"
-            },
-            {
-                "file": "images/datenum_3.png",
-                "name": "IMAGE_DATENUM_3",
-                "type": "png"
-            },
-            {
-                "file": "images/datenum_2.png",
-                "name": "IMAGE_DATENUM_2",
-                "type": "png"
-            },
-            {
-                "file": "images/datenum_1.png",
-                "name": "IMAGE_DATENUM_1",
-                "type": "png"
-            },
-            {
-                "file": "images/datenum_0.png",
-                "name": "IMAGE_DATENUM_0",
-                "type": "png"
-            },
-            {
-                "file": "images/day_sat.png",
-                "name": "IMAGE_DAY_NAME_SAT",
-                "type": "png"
-            },
-            {
-                "file": "images/day_fri.png",
-                "name": "IMAGE_DAY_NAME_FRI",
-                "type": "png"
-            },
-            {
-                "file": "images/day_thu.png",
-                "name": "IMAGE_DAY_NAME_THU",
-                "type": "png"
-            },
-            {
-                "file": "images/day_wed.png",
-                "name": "IMAGE_DAY_NAME_WED",
-                "type": "png"
-            },
-            {
-                "file": "images/day_tue.png",
-                "name": "IMAGE_DAY_NAME_TUE",
-                "type": "png"
-            },
-            {
-                "file": "images/day_mon.png",
-                "name": "IMAGE_DAY_NAME_MON",
-                "type": "png"
-            },
-            {
-                "file": "images/day_sun.png",
-                "name": "IMAGE_DAY_NAME_SUN",
-                "type": "png"
-            },
-            {
-                "file": "images/time_format_PM.png",
-                "name": "IMAGE_PM_MODE",
-                "type": "png"
-            },
-            {
-                "file": "images/time_format_24H.png",
-                "name": "IMAGE_24_HOUR_MODE",
-                "type": "png"
-            },
-            {
-                "file": "images/icon_meter.png",
-                "name": "IMAGE_METER_BAR",
-                "type": "png"
-            },
-            {
-                "file": "images/background.png",
-                "name": "IMAGE_BACKGROUND",
+                "file": "images/weather_clear-day.png",
+                "name": "IMAGE_WEATHER_CLEAR_DAY",
                 "type": "png"
             },
             {
@@ -209,68 +84,193 @@
                 "type": "png"
             },
             {
-                "file": "images/weather_clear-day.png",
-                "name": "IMAGE_WEATHER_CLEAR_DAY",
+                "file": "images/background.png",
+                "name": "IMAGE_BACKGROUND",
                 "type": "png"
             },
             {
-                "file": "images/weather_clear-night.png",
-                "name": "IMAGE_WEATHER_CLEAR_NIGHT",
+                "file": "images/icon_meter.png",
+                "name": "IMAGE_METER_BAR",
                 "type": "png"
             },
             {
-                "file": "images/weather_cloudy.png",
-                "name": "IMAGE_WEATHER_CLOUDY",
+                "file": "images/time_format_24H.png",
+                "name": "IMAGE_24_HOUR_MODE",
                 "type": "png"
             },
             {
-                "file": "images/weather_error.png",
-                "name": "IMAGE_WEATHER_NO_WEATHER",
+                "file": "images/time_format_PM.png",
+                "name": "IMAGE_PM_MODE",
                 "type": "png"
             },
             {
-                "file": "images/weather_partly-cloudy-day.png",
-                "name": "IMAGE_WEATHER_PARTLY_CLOUDY_DAY",
+                "file": "images/day_sun.png",
+                "name": "IMAGE_DAY_NAME_SUN",
                 "type": "png"
             },
             {
-                "file": "images/weather_partly-cloudy-night.png",
-                "name": "IMAGE_WEATHER_PARTLY_CLOUDY_NIGHT",
+                "file": "images/day_mon.png",
+                "name": "IMAGE_DAY_NAME_MON",
                 "type": "png"
             },
             {
-                "file": "images/weather_slightly-cloudy.png",
-                "name": "IMAGE_WEATHER_SLIGHTLY_CLOUDY",
+                "file": "images/day_tue.png",
+                "name": "IMAGE_DAY_NAME_TUE",
                 "type": "png"
             },
             {
-                "file": "images/weather_drizzle.png",
-                "name": "IMAGE_WEATHER_DRIZZLE",
+                "file": "images/day_wed.png",
+                "name": "IMAGE_DAY_NAME_WED",
                 "type": "png"
             },
             {
-                "file": "images/weather_rain.png",
-                "name": "IMAGE_WEATHER_RAIN",
+                "file": "images/day_thu.png",
+                "name": "IMAGE_DAY_NAME_THU",
                 "type": "png"
             },
             {
-                "file": "images/weather_tstorm.png",
-                "name": "IMAGE_WEATHER_TSTORM",
+                "file": "images/day_fri.png",
+                "name": "IMAGE_DAY_NAME_FRI",
                 "type": "png"
             },
             {
-                "file": "images/weather_snow.png",
-                "name": "IMAGE_WEATHER_SNOW",
+                "file": "images/day_sat.png",
+                "name": "IMAGE_DAY_NAME_SAT",
                 "type": "png"
             },
             {
-                "file": "images/weather_fog.png",
-                "name": "IMAGE_WEATHER_FOG",
+                "file": "images/datenum_0.png",
+                "name": "IMAGE_DATENUM_0",
                 "type": "png"
             },
             {
-                "file": "images/moon_6.png",
-                "name": "IMAGE_MOON_6",
+                "file": "images/datenum_1.png",
+                "name": "IMAGE_DATENUM_1",
+                "type": "png"
+            },
+            {
+                "file": "images/datenum_2.png",
+                "name": "IMAGE_DATENUM_2",
+                "type": "png"
+            },
+            {
+                "file": "images/datenum_3.png",
+                "name": "IMAGE_DATENUM_3",
+                "type": "png"
+            },
+            {
+                "file": "images/datenum_4.png",
+                "name": "IMAGE_DATENUM_4",
+                "type": "png"
+            },
+            {
+                "file": "images/datenum_5.png",
+                "name": "IMAGE_DATENUM_5",
+                "type": "png"
+            },
+            {
+                "file": "images/datenum_6.png",
+                "name": "IMAGE_DATENUM_6",
+                "type": "png"
+            },
+            {
+                "file": "images/datenum_7.png",
+                "name": "IMAGE_DATENUM_7",
+                "type": "png"
+            },
+            {
+                "file": "images/datenum_8.png",
+                "name": "IMAGE_DATENUM_8",
+                "type": "png"
+            },
+            {
+                "file": "images/datenum_9.png",
+                "name": "IMAGE_DATENUM_9",
+                "type": "png"
+            },
+            {
+                "file": "images/num_0.png",
+                "name": "IMAGE_NUM_0",
+                "type": "png"
+            },
+            {
+                "file": "images/num_1.png",
+                "name": "IMAGE_NUM_1",
+                "type": "png"
+            },
+            {
+                "file": "images/num_2.png",
+                "name": "IMAGE_NUM_2",
+                "type": "png"
+            },
+            {
+                "file": "images/num_3.png",
+                "name": "IMAGE_NUM_3",
+                "type": "png"
+            },
+            {
+                "file": "images/num_4.png",
+                "name": "IMAGE_NUM_4",
+                "type": "png"
+            },
+            {
+                "file": "images/num_5.png",
+                "name": "IMAGE_NUM_5",
+                "type": "png"
+            },
+            {
+                "file": "images/num_6.png",
+                "name": "IMAGE_NUM_6",
+                "type": "png"
+            },
+            {
+                "file": "images/num_7.png",
+                "name": "IMAGE_NUM_7",
+                "type": "png"
+            },
+            {
+                "file": "images/num_8.png",
+                "name": "IMAGE_NUM_8",
+                "type": "png"
+            },
+            {
+                "file": "images/num_9.png",
+                "name": "IMAGE_NUM_9",
+                "type": "png"
+            },
+            {
+                "file": "images/moon_0.png",
+                "name": "IMAGE_MOON_0",
+                "type": "png"
+            },
+            {
+                "file": "images/moon_1.png",
+                "name": "IMAGE_MOON_1",
+                "type": "png"
+            },
+            {
+                "file": "images/moon_2.png",
+                "name": "IMAGE_MOON_2",
+                "type": "png"
+            },
+            {
+                "file": "images/moon_3.png",
+                "name": "IMAGE_MOON_3",
+                "type": "png"
+            },
+            {
+                "file": "images/moon_4.png",
+                "name": "IMAGE_MOON_4",
+                "type": "png"
+            },
+            {
+                "file": "images/moon_5.png",
+                "name": "IMAGE_MOON_5",
+                "type": "png"
+            },
+            {
+                "file": "images/moon_7.png",
+                "name": "IMAGE_MOON_7",
                 "type": "png"
             }
         ]
