@@ -1,5 +1,5 @@
 //NOTE: longitude is positive for East and negative for West
-//      Milan, Coordinates :  45.4667° N, 9.1833° E
+//      Milan, Coordinates :  45.4667° N, 9.1833° E 
 #define LATITUDE    45.52
 #define LONGITUDE 9.17
 #define TIMEZONE +1
