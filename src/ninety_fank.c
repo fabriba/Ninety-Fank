@@ -328,10 +328,10 @@ static void handle_second_tick(struct tm* current_time, TimeUnits units_changed)
 		  short  display_hour_tz3 = display_hour AdditionalTimezone_3;
 		  if (display_hour_tz3 > 24) display_hour_tz3 -= 24;
 		  if (display_hour_tz3 < 0) display_hour_tz3 += 24;
-		  set_container_image(&date_digits_images[12], date_digits_layers[12], DATENUM_IMAGE_RESOURCE_IDS[display_hour_tz3/10], GPoint(75, 37));
-		  set_container_image(&date_digits_images[13], date_digits_layers[13], DATENUM_IMAGE_RESOURCE_IDS[display_hour_tz3%10], GPoint(88, 37));  
-		  set_container_image(&date_digits_images[14], date_digits_layers[14], DATENUM_IMAGE_RESOURCE_IDS[current_time->tm_min/10], GPoint(108, 37));
-		  set_container_image(&date_digits_images[15], date_digits_layers[15], DATENUM_IMAGE_RESOURCE_IDS[current_time->tm_min%10], GPoint(121, 37));  
+		  set_container_image(&date_digits_images[12], date_digits_layers[12], DATENUM_IMAGE_RESOURCE_IDS[display_hour_tz3/10], GPoint(75, 47));
+		  set_container_image(&date_digits_images[13], date_digits_layers[13], DATENUM_IMAGE_RESOURCE_IDS[display_hour_tz3%10], GPoint(88, 47));  
+		  set_container_image(&date_digits_images[14], date_digits_layers[14], DATENUM_IMAGE_RESOURCE_IDS[current_time->tm_min/10], GPoint(108, 47));
+		  set_container_image(&date_digits_images[15], date_digits_layers[15], DATENUM_IMAGE_RESOURCE_IDS[current_time->tm_min%10], GPoint(121, 47));  
 	  }
 	
 	 //execute the following only very 30 minutes (useful if other layers are executed more often)
@@ -520,7 +520,7 @@ static void init(void) {
   layer_add_child(window_layer, text_layer_get_layer(text_addTimeZone2_layer));  
   
   // ==== Create and define Time Zone 3 Layer ====
-  text_addTimeZone3_layer = text_layer_create(GRect(51, 36, 100 /* width */, 30 /* height */)); 
+  text_addTimeZone3_layer = text_layer_create(GRect(51, 46, 100 /* width */, 30 /* height */)); 
   text_layer_set_text_color(text_addTimeZone3_layer, GColorWhite);
   text_layer_set_background_color(text_addTimeZone3_layer, GColorClear );
   text_layer_set_font(text_addTimeZone3_layer, fonts_get_system_font(FONT_KEY_GOTHIC_14));
