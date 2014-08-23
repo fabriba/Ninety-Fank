@@ -9,7 +9,7 @@
   #define KEY_TEMPERATURE 0
   #define KEY_CONDITIONS 1
   #define KEY_ICON 2
-  #definte KEY_LOCATION 3
+  #define KEY_LOCATION 3
 // Ninety_Fank Version 2.201
   
 		static Window *window;
