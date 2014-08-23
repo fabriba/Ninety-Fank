@@ -83,9 +83,7 @@ const char *MOONPHASE_TEXT_FRENCH[] = {
     "NL-"
 };
 
-
-/* Fa: the following seems unused. My best guess is that initially it was used to draw GRect for date dependent on date format
-
+// the following are used in the define section (only one of them is used)
 const int day_month_day_first[] = {
 	75,
 	108
@@ -95,5 +93,3 @@ const int day_month_month_first[] = {
 	108,
 	75
 };
-
-*/
