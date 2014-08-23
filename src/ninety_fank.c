@@ -397,6 +397,7 @@ static void handle_second_tick(struct tm* current_time, TimeUnits units_changed)
 		}
 // handles weather (2 of 4) - request not acknowledged
 		static void outbox_failed_callback(DictionaryIterator *iterator, AppMessageResult reason, void *context) {
+		static char weather_layer_buffer[32];
 		  APP_LOG(APP_LOG_LEVEL_ERROR, "Outbox send failed!");
 		// Set weather icon and text
 		  snprintf(weather_layer_buffer, sizeof(weather_layer_buffer), "nack");
@@ -406,6 +407,7 @@ static void handle_second_tick(struct tm* current_time, TimeUnits units_changed)
 		}
 // handles weather (3 of 4) - message reception was unsuccessful
 		static void inbox_dropped_callback(AppMessageResult reason, void *context) {  
+		static char weather_layer_buffer[32];
 		  APP_LOG(APP_LOG_LEVEL_ERROR, "Message dropped!");
 		  // Set weather icon and text
 		  snprintf(weather_layer_buffer, sizeof(weather_layer_buffer), "recpt fail");
