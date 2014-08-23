@@ -89,6 +89,16 @@
                 "type": "png"
             },
             {
+                "file": "images/background_1tz.png",
+                "name": "IMAGE_BACKGROUND_1TZ",
+                "type": "png"
+            },
+            {
+                "file": "images/background_3tz.png",
+                "name": "IMAGE_BACKGROUND_3TZ",
+                "type": "png"
+            },
+            {
                 "file": "images/icon_meter.png",
                 "name": "IMAGE_METER_BAR",
                 "type": "png"
@@ -346,6 +356,16 @@
             {
                 "file": "images/_inv_background.png",
                 "name": "IMGAGE_INV_BACKGROUND",
+                "type": "png"
+            },
+			{
+                "file": "images/_inv_background_1tz.png",
+                "name": "IMGAGE_INV_BACKGROUND_1TZ",
+                "type": "png"
+            },
+			{
+                "file": "images/_inv_background_3tz.png",
+                "name": "IMGAGE_INV_BACKGROUND_3TZ",
                 "type": "png"
             },
             {

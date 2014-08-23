@@ -477,8 +477,9 @@ static void init(void) {
   }
   window_stack_push(window, true /* Sliding Animation */);
   Layer *window_layer = window_get_root_layer(window);
-
-  background_image = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_BACKGROUND);
+  if (AdditionalTimezone_2 < -24) 		{  background_image = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_BACKGROUND_1TZ); }
+  else if (AdditionalTimezone_3 < -24) 	{  background_image = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_BACKGROUND); }
+  else 									{  background_image = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_BACKGROUND_3TZ); }
   background_layer = bitmap_layer_create(layer_get_frame(window_layer));
   bitmap_layer_set_bitmap(background_layer, background_image);
   layer_add_child(window_layer, bitmap_layer_get_layer(background_layer));

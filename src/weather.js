@@ -54,6 +54,7 @@ function locationSuccess(pos) {
 
 function locationError(err) {
   console.log("Error requesting location!");
+  
 }
 
 function getWeather() {
@@ -82,9 +83,10 @@ Pebble.addEventListener('appmessage',
   }                     
 );
 
-// Listen for when an AppMessage is received
+/* Listen for when an AppMessage is received
 Pebble.addEventListener('appmessage',
   function(e) {
     console.log("AppMessage received!");
   }                     
 );
+*/

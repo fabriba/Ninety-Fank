@@ -1,7 +1,7 @@
 //NOTE: longitude is positive for East and negative for West
 //      Milan, Coordinates :  45.4667° N, 9.1833° E 
-#define LATITUDE    45.4667
-#define LONGITUDE 9.1833
+#define LATITUDE    45.52
+#define LONGITUDE 9.17
 #define TIMEZONE +1
 #define DAY_NAME_LANGUAGE DAY_NAME_ENGLISH 				// Valid values: DAY_NAME_ENGLISH, DAY_NAME_GERMAN, DAY_NAME_FRENCH
 #define MOONPHASE_NAME_LANGUAGE MOONPHASE_TEXT_ENGLISH 	// Valid values: MOONPHASE_TEXT_ENGLISH, MOONPHASE_TEXT_GERMAN, MOONPHASE_TEXT_FRENCH
