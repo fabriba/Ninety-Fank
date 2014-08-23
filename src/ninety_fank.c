@@ -299,25 +299,38 @@ static void handle_second_tick(struct tm* current_time, TimeUnits units_changed)
 	  set_container_image(&time_digits_images[3], time_digits_layers[3], BIG_DIGIT_IMAGE_RESOURCE_IDS[current_time->tm_min%10], GPoint(111, 94));
 	  	  
 	  // ===== Set Time Zone 1 ===== 
-	  text_layer_set_text(text_addTimeZone1_layer, AdditionalTimezone_1_Description); 
-	  short  display_hour_tz1 = display_hour AdditionalTimezone_1;
-	  if (display_hour_tz1 >= 24) display_hour_tz1 -= 24;		// 24:00 > 0:00, 26:15 > 2:15, etc
-	  if (display_hour_tz1 < 0) display_hour_tz1 += 24;
-	  set_container_image(&date_digits_images[4], date_digits_layers[4], DATENUM_IMAGE_RESOURCE_IDS[display_hour_tz1/10], GPoint(75, 5));
-	  set_container_image(&date_digits_images[5], date_digits_layers[5], DATENUM_IMAGE_RESOURCE_IDS[display_hour_tz1%10], GPoint(88, 5));  
-	  set_container_image(&date_digits_images[6], date_digits_layers[6], DATENUM_IMAGE_RESOURCE_IDS[current_time->tm_min/10], GPoint(108, 5));
-	  set_container_image(&date_digits_images[7], date_digits_layers[7], DATENUM_IMAGE_RESOURCE_IDS[current_time->tm_min%10], GPoint(121, 5));  
-	  
+	  if (AdditionalTimezone_1 > -24) {
+		  text_layer_set_text(text_addTimeZone1_layer, AdditionalTimezone_1_Description); 
+		  short  display_hour_tz1 = display_hour AdditionalTimezone_1;
+		  if (display_hour_tz1 >= 24) display_hour_tz1 -= 24;		// 24:00 > 0:00, 26:15 > 2:15, etc
+		  if (display_hour_tz1 < 0) display_hour_tz1 += 24;
+		  set_container_image(&date_digits_images[4], date_digits_layers[4], DATENUM_IMAGE_RESOURCE_IDS[display_hour_tz1/10], GPoint(75, 5));
+		  set_container_image(&date_digits_images[5], date_digits_layers[5], DATENUM_IMAGE_RESOURCE_IDS[display_hour_tz1%10], GPoint(88, 5));  
+		  set_container_image(&date_digits_images[6], date_digits_layers[6], DATENUM_IMAGE_RESOURCE_IDS[current_time->tm_min/10], GPoint(108, 5));
+		  set_container_image(&date_digits_images[7], date_digits_layers[7], DATENUM_IMAGE_RESOURCE_IDS[current_time->tm_min%10], GPoint(121, 5));  
+	  }
 	  // ===== Set Time Zone 2 ===== 
-	  text_layer_set_text(text_addTimeZone2_layer, AdditionalTimezone_2_Description); 
-	  short  display_hour_tz2 = display_hour AdditionalTimezone_2;
-	  if (display_hour_tz2 > 24) display_hour_tz2 -= 24;
-	  if (display_hour_tz2 < 0) display_hour_tz2 += 24;
-	  set_container_image(&date_digits_images[8], date_digits_layers[8], DATENUM_IMAGE_RESOURCE_IDS[display_hour_tz2/10], GPoint(75, 26));
-	  set_container_image(&date_digits_images[9], date_digits_layers[9], DATENUM_IMAGE_RESOURCE_IDS[display_hour_tz2%10], GPoint(88, 26));  
-	  set_container_image(&date_digits_images[10], date_digits_layers[10], DATENUM_IMAGE_RESOURCE_IDS[current_time->tm_min/10], GPoint(108, 26));
-	  set_container_image(&date_digits_images[11], date_digits_layers[11], DATENUM_IMAGE_RESOURCE_IDS[current_time->tm_min%10], GPoint(121, 26));  
-    
+	  if (AdditionalTimezone_2 > -24) {
+		  text_layer_set_text(text_addTimeZone2_layer, AdditionalTimezone_2_Description); 
+		  short  display_hour_tz2 = display_hour AdditionalTimezone_2;
+		  if (display_hour_tz2 > 24) display_hour_tz2 -= 24;
+		  if (display_hour_tz2 < 0) display_hour_tz2 += 24;
+		  set_container_image(&date_digits_images[8], date_digits_layers[8], DATENUM_IMAGE_RESOURCE_IDS[display_hour_tz2/10], GPoint(75, 26));
+		  set_container_image(&date_digits_images[9], date_digits_layers[9], DATENUM_IMAGE_RESOURCE_IDS[display_hour_tz2%10], GPoint(88, 26));  
+		  set_container_image(&date_digits_images[10], date_digits_layers[10], DATENUM_IMAGE_RESOURCE_IDS[current_time->tm_min/10], GPoint(108, 26));
+		  set_container_image(&date_digits_images[11], date_digits_layers[11], DATENUM_IMAGE_RESOURCE_IDS[current_time->tm_min%10], GPoint(121, 26));  
+	  }	
+		  // ===== Set Time Zone 3 ===== 
+	  if (AdditionalTimezone_3 > -24) {
+		  text_layer_set_text(text_addTimeZone3_layer, AdditionalTimezone_3_Description); 
+		  short  display_hour_tz3 = display_hour AdditionalTimezone_3;
+		  if (display_hour_tz3 > 24) display_hour_tz3 -= 24;
+		  if (display_hour_tz3 < 0) display_hour_tz3 += 24;
+		  set_container_image(&date_digits_images[8], date_digits_layers[8], DATENUM_IMAGE_RESOURCE_IDS[display_hour_tz3/10], GPoint(75, 26));
+		  set_container_image(&date_digits_images[9], date_digits_layers[9], DATENUM_IMAGE_RESOURCE_IDS[display_hour_tz3%10], GPoint(88, 26));  
+		  set_container_image(&date_digits_images[10], date_digits_layers[10], DATENUM_IMAGE_RESOURCE_IDS[current_time->tm_min/10], GPoint(108, 37));
+		  set_container_image(&date_digits_images[11], date_digits_layers[11], DATENUM_IMAGE_RESOURCE_IDS[current_time->tm_min%10], GPoint(121, 37));  
+	  }
 	
 	 //execute the following only very 30 minutes (useful if other layers are executed more often)
     if(display_minute % 30 == 0) {

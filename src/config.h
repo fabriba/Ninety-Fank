@@ -8,11 +8,14 @@
 #define day_month_x day_month_day_first 				// Valid values: day_month_month_first, day_month_day_first
 #define TRANSLATION_CW "WK%V" 							// Translation for the calendar week (e.g. "CW%V")
 
-// ----- Additional time zones to display on the top right
+// ----- Additional time zones to display on the top right 
+//      -NOTE: if timezone is < -24 then that timezone won't be shown
 #define AdditionalTimezone_1 +6 						// Timezone offest
 #define AdditionalTimezone_2 +8 						// Timezone offest
+#define AdditionalTimezone_3 -6 						// Timezone offest
 static char AdditionalTimezone_1_Description[] = "Sg"; // Timezone name to display
 static char AdditionalTimezone_2_Description[] = "Syd"; // Timezone name to display
+static char AdditionalTimezone_3_Description[] = "NY"; // Timezone name to display
 // ----- Additional time zones to display on the top right
 
 
@@ -40,13 +43,13 @@ const char *DAY_NAME_GERMAN[] = {
 };
 
 const char *DAY_NAME_ENGLISH[] = {
-	"SUN",
-	"MON",
-	"TUE",
-	"WED",
-	"THU",
-	"FRI",
-	"SAT"
+	"Sun",
+	"Mon",
+	"Tue",
+	"Wed",
+	"Thu",
+	"Fri",
+	"Sat"
 };
 
 const char *MOONPHASE_TEXT_ENGLISH[] = {
