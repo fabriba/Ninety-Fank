@@ -401,17 +401,15 @@ static void handle_second_tick(struct tm* current_time, TimeUnits units_changed)
 		// Set weather icon and text
 		  snprintf(weather_layer_buffer, sizeof(weather_layer_buffer), "send fail");
 		  text_layer_set_text(s_weather_layer, weather_layer_buffer);
-		  int current_weather = weather_id(icon_buffer);
 		  set_container_image(&weather_images[0], weather_layers[0], WEATHER_IMAGE_RESOURCE_IDS[11], GPoint(2, 2)); 
 		  
 		}
 // handles weather (3 of 4) - message reception was unsuccessful
-		static void inbox_dropped_callback(AppMessageResult reason, void *context) {
+		static void inbox_dropped_callback(AppMessageResult reason, void *context) {  
 		  APP_LOG(APP_LOG_LEVEL_ERROR, "Message dropped!");
 		  // Set weather icon and text
 		  snprintf(weather_layer_buffer, sizeof(weather_layer_buffer), "receive fail");
 		  text_layer_set_text(s_weather_layer, weather_layer_buffer);
-		  int current_weather = weather_id(icon_buffer);
 		  set_container_image(&weather_images[0], weather_layers[0], WEATHER_IMAGE_RESOURCE_IDS[11], GPoint(2, 2)); 
 		
 		}
