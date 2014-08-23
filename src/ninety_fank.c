@@ -426,7 +426,6 @@ static void handle_second_tick(struct tm* current_time, TimeUnits units_changed)
 		  static char location_buffer[32];
 		  static char weather_layer_buffer[32];
 		  
-		  snprintf(weather_layer_buffer, sizeof(weather_layer_buffer), " n/a")
 		  // Read first item
 		  Tuple *t = dict_read_first(iterator);
 

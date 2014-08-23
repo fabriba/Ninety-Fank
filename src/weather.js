@@ -33,7 +33,7 @@ function locationSuccess(pos) {
 	  // Conditions: json.weather[0].icon contains a string identifying an icon
       var location = json.weather[0].name;      
       console.log("Location is " + location);
-	  	if (pos.timestamp = 0) { location = "gps off"; }  //if timestamp=0, this is our default location, and not real data
+	  	if (pos.timestamp = 0) { location = "gps off"; }  //if timestamp=0, location is not real data
       
       // Assemble dictionary using our keys
       var dictionary = {
