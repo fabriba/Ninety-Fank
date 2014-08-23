@@ -273,6 +273,267 @@
                 "name": "IMAGE_MOON_7",
                 "type": "png"
             }
+			{
+                "file": "images/_inv_moon_6.png",
+                "name": "IMGAGE_INV_MOON_6",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_weather_fog.png",
+                "name": "IMGAGE_INV_WEATHER_FOG",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_weather_snow.png",
+                "name": "IMGAGE_INV_WEATHER_SNOW",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_weather_tstorm.png",
+                "name": "IMGAGE_INV_WEATHER_TSTORM",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_weather_rain.png",
+                "name": "IMGAGE_INV_WEATHER_RAIN",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_weather_drizzle.png",
+                "name": "IMGAGE_INV_WEATHER_DRIZZLE",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_weather_slightly-cloudy.png",
+                "name": "IMGAGE_INV_WEATHER_SLIGHTLY_CLOUDY",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_weather_partly-cloudy-night.png",
+                "name": "IMGAGE_INV_WEATHER_PARTLY_CLOUDY_NIGHT",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_weather_partly-cloudy-day.png",
+                "name": "IMGAGE_INV_WEATHER_PARTLY_CLOUDY_DAY",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_weather_error.png",
+                "name": "IMGAGE_INV_WEATHER_NO_WEATHER",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_weather_cloudy.png",
+                "name": "IMGAGE_INV_WEATHER_CLOUDY",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_weather_clear-night.png",
+                "name": "IMGAGE_INV_WEATHER_CLEAR_NIGHT",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_weather_clear-day.png",
+                "name": "IMGAGE_INV_WEATHER_CLEAR_DAY",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_menu_icon_91w.png",
+                "menuIcon": true,
+                "name": "IMGAGE_INV_MENU_ICON",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_background.png",
+                "name": "IMGAGE_INV_BACKGROUND",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_icon_meter.png",
+                "name": "IMGAGE_INV_METER_BAR",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_time_format_24H.png",
+                "name": "IMGAGE_INV_24_HOUR_MODE",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_time_format_PM.png",
+                "name": "IMGAGE_INV_PM_MODE",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_day_sun.png",
+                "name": "IMGAGE_INV_DAY_NAME_SUN",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_day_mon.png",
+                "name": "IMGAGE_INV_DAY_NAME_MON",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_day_tue.png",
+                "name": "IMGAGE_INV_DAY_NAME_TUE",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_day_wed.png",
+                "name": "IMGAGE_INV_DAY_NAME_WED",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_day_thu.png",
+                "name": "IMGAGE_INV_DAY_NAME_THU",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_day_fri.png",
+                "name": "IMGAGE_INV_DAY_NAME_FRI",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_day_sat.png",
+                "name": "IMGAGE_INV_DAY_NAME_SAT",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_datenum_0.png",
+                "name": "IMGAGE_INV_DATENUM_0",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_datenum_1.png",
+                "name": "IMGAGE_INV_DATENUM_1",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_datenum_2.png",
+                "name": "IMGAGE_INV_DATENUM_2",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_datenum_3.png",
+                "name": "IMGAGE_INV_DATENUM_3",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_datenum_4.png",
+                "name": "IMGAGE_INV_DATENUM_4",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_datenum_5.png",
+                "name": "IMGAGE_INV_DATENUM_5",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_datenum_6.png",
+                "name": "IMGAGE_INV_DATENUM_6",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_datenum_7.png",
+                "name": "IMGAGE_INV_DATENUM_7",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_datenum_8.png",
+                "name": "IMGAGE_INV_DATENUM_8",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_datenum_9.png",
+                "name": "IMGAGE_INV_DATENUM_9",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_num_0.png",
+                "name": "IMGAGE_INV_NUM_0",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_num_1.png",
+                "name": "IMGAGE_INV_NUM_1",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_num_2.png",
+                "name": "IMGAGE_INV_NUM_2",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_num_3.png",
+                "name": "IMGAGE_INV_NUM_3",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_num_4.png",
+                "name": "IMGAGE_INV_NUM_4",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_num_5.png",
+                "name": "IMGAGE_INV_NUM_5",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_num_6.png",
+                "name": "IMGAGE_INV_NUM_6",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_num_7.png",
+                "name": "IMGAGE_INV_NUM_7",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_num_8.png",
+                "name": "IMGAGE_INV_NUM_8",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_num_9.png",
+                "name": "IMGAGE_INV_NUM_9",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_moon_0.png",
+                "name": "IMGAGE_INV_MOON_0",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_moon_1.png",
+                "name": "IMGAGE_INV_MOON_1",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_moon_2.png",
+                "name": "IMGAGE_INV_MOON_2",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_moon_3.png",
+                "name": "IMGAGE_INV_MOON_3",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_moon_4.png",
+                "name": "IMGAGE_INV_MOON_4",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_moon_5.png",
+                "name": "IMGAGE_INV_MOON_5",
+                "type": "png"
+            },
+            {
+                "file": "images/_inv_moon_7.png",
+                "name": "IMGAGE_INV_MOON_7",
+                "type": "png"
+            }
         ]
     },
     "shortName": "Ninety Fank",
