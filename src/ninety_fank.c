@@ -290,7 +290,7 @@ static void handle_second_tick(struct tm* current_time, TimeUnits units_changed)
   
   //execute the following only once per minute (useful if other layers are executed every second)
   if (the_last_minute != display_minute){  
-a	  the_last_minute = display_minute;
+	  the_last_minute = display_minute;
 	  unsigned short display_hour = get_display_hour(current_time->tm_hour);
 
 
