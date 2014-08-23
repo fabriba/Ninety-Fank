@@ -340,7 +340,6 @@
             },
             {
                 "file": "images/_inv_menu_icon_91w.png",
-                "menuIcon": true,
                 "name": "IMGAGE_INV_MENU_ICON",
                 "type": "png"
             },

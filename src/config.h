@@ -18,16 +18,6 @@ static char AdditionalTimezone_2_Description[] = "Syd"; // Timezone name to disp
 
 // ---- Constants for all available languages ----------------------------------------
 
-const int day_month_day_first[] = {
-	75,
-	108
-};
-
-const int day_month_month_first[] = {
-	108,
-	75
-};
-
 const char *MOONPHASE_TEXT_GERMAN[] = {
 	"NM",
 	"NM+",
@@ -89,3 +79,18 @@ const char *MOONPHASE_TEXT_FRENCH[] = {
     "PL++",
     "NL-"
 };
+
+
+/* Fa: the following seems unused. My best guess is that initially it was used to draw GRect for date dependent on date format
+
+const int day_month_day_first[] = {
+	75,
+	108
+};
+
+const int day_month_month_first[] = {
+	108,
+	75
+};
+
+*/
