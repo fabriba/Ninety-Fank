@@ -1,7 +1,7 @@
 //NOTE: longitude is positive for East and negative for West
 //      Milan, Coordinates :  45.4667° N, 9.1833° E 
-#define LATITUDE    45.52
-#define LONGITUDE 9.17
+#define LATITUDE    45.53
+#define LONGITUDE 9.18
 	//NOTE: the same coordinates should also be set in weather.js, at the moment I didn't set a variable valid for both files 
 #define TIMEZONE +1
 #define DAY_NAME_LANGUAGE DAY_NAME_ENGLISH 				// Valid values: DAY_NAME_ENGLISH, DAY_NAME_GERMAN, DAY_NAME_FRENCH
@@ -15,7 +15,7 @@
 #define AdditionalTimezone_2 -999 						// Timezone offest (NY = -6)
 #define AdditionalTimezone_3 -999 						// Timezone offest (Syd = -8)
 static char AdditionalTimezone_1_Description[] = "Sg"; // Timezone name to display
-static char AdditionalTimezone_2_Description[] = "SY"; // Timezone name to display
+static char AdditionalTimezone_2_Description[] = "NY"; // Timezone name to display
 static char AdditionalTimezone_3_Description[] = "Syd"; // Timezone name to display
 // ----- Additional time zones to display on the top right
 

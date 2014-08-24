@@ -10,6 +10,7 @@
   #define KEY_CONDITIONS 1
   #define KEY_ICON 2
   #define KEY_LOCATION 3
+  #define KEY_EPOCH 4
 // Ninety_Fank Version 2.201
   
 		static Window *window;
@@ -337,6 +338,7 @@ static void handle_second_tick(struct tm* current_time, TimeUnits units_changed)
 	  }
 	
 	 //execute the following only very 30 minutes (useful if other layers are executed more often)
+    // temporarily changed to 5 minutes for testing purposes
     if(display_minute % 30 == 0) {
 		 // ===== Set Weather =====
          DictionaryIterator *iter;
@@ -424,7 +426,11 @@ static void handle_second_tick(struct tm* current_time, TimeUnits units_changed)
 		  static char conditions_buffer[32];
 		  static char icon_buffer[4];
 		  static char location_buffer[32];
-		  static char weather_layer_buffer[32];
+      static char age_buffer[32];
+      time_t epoch;
+      struct tm *struct_epoch;
+      static char weather_layer_buffer[32];
+      static char location_layer_buffer[32];
 		  
 		  // Read first item
 		  Tuple *t = dict_read_first(iterator);
@@ -434,7 +440,11 @@ static void handle_second_tick(struct tm* current_time, TimeUnits units_changed)
 			// Which key was received?
 			switch(t->key) {
 			case KEY_TEMPERATURE:
-				snprintf(temperature_buffer, sizeof(temperature_buffer), "%dC", (int)t->value->int32);
+        if ((int)t->value->int32 == -273.15) {
+         snprintf(temperature_buffer, sizeof(temperature_buffer), "  -");  
+        } else {
+         snprintf(temperature_buffer, sizeof(temperature_buffer), "%dC", (int)t->value->int32); 
+        }
 				break;
 			case KEY_CONDITIONS:
 				snprintf(conditions_buffer, sizeof(conditions_buffer), "%s", t->value->cstring);
@@ -445,6 +455,12 @@ static void handle_second_tick(struct tm* current_time, TimeUnits units_changed)
 			case KEY_LOCATION:
 				snprintf(location_buffer, sizeof(location_buffer), "%s", t->value->cstring);
 			  break;
+			case KEY_EPOCH:
+        epoch = (time_t)t->value->int32;
+        struct_epoch = localtime(&epoch);
+        strftime(age_buffer, sizeof age_buffer, "%H:%M", struct_epoch);
+				//snprintf(age_buffer, sizeof(age_buffer), "%d", (int)t->value->int32);
+			  break;
 			default:
 			  APP_LOG(APP_LOG_LEVEL_ERROR, "Key %d not recognized!", (int)t->key);
 			  break;
@@ -454,13 +470,14 @@ static void handle_second_tick(struct tm* current_time, TimeUnits units_changed)
 			t = dict_read_next(iterator);
 		  }
 		// Set weather string and display
-		snprintf(weather_layer_buffer, sizeof(weather_layer_buffer), " %s", temperature_buffer);
+		snprintf(weather_layer_buffer, sizeof(weather_layer_buffer), "%s", temperature_buffer);
 				// simplified showing only temp and icon, the original string commented out below also shows conditions detail
 				// snprintf(weather_layer_buffer, sizeof(weather_layer_buffer), "  %s\n%s", temperature_buffer, conditions_buffer);  
 		text_layer_set_text(s_weather_layer, weather_layer_buffer);
 		
 		// display location
-		text_layer_set_text(weather_location_layer, location_buffer);
+    snprintf(location_layer_buffer, sizeof(location_layer_buffer), "%s (@ %s)", location_buffer, age_buffer);
+		text_layer_set_text(weather_location_layer, location_layer_buffer);
 		  
 		 // Set weather icon and display
 		int current_weather = weather_id(icon_buffer);
